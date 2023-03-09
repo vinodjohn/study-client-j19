@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+.info {
+  color: deepskyblue;
+}

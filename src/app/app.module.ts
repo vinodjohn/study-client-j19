@@ -9,6 +9,9 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {SchoolModule} from "../school/school.module";
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {AppInterceptor} from "./shared/interceptor/app.interceptor";
+import { MessageSnackbarComponent } from './message-snackbar/message-snackbar.component';
+import {MatSnackBarModule} from "@angular/material/snack-bar";
+import {MatButtonModule} from "@angular/material/button";
 
 const appRoutes: Routes = [
   {
@@ -18,7 +21,8 @@ const appRoutes: Routes = [
 ]
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MessageSnackbarComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,9 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     MatToolbarModule,
     SchoolModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSnackBarModule,
+    MatButtonModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,

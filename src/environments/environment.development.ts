@@ -3,5 +3,5 @@ export const environment = {
   DefaultLanguage: 'en',
   development: true,
   environmentName: 'DEV',
-  baseURL: 'http://localhost:8080/'
+  baseURL: 'http://localhost:8082/'
 };

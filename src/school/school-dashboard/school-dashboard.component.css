@@ -1,3 +1,24 @@
 table {
   width: 100%;
 }
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  width: 60px;
+}
+
+.button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+
+.button-row .mat-mdc-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
